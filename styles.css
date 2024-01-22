@@ -47,7 +47,84 @@ table {
 	border-spacing: 0;
 }
 
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .roboto-thin-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .roboto-light-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-regular-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .roboto-medium-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .roboto-bold-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .roboto-black-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+
+
 /* CSS Reset End */
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
 
 .body-container {
     display: grid;
@@ -177,7 +254,7 @@ table {
 }
 
 .header-1-profile-picture, .header-notification {
-    height: 100%;
+    height: 32px;
     width: auto;
 }
 
@@ -272,7 +349,7 @@ table {
     background-color: #e2e8f0;
     grid-column: 1 / 2;
     grid-row: 1 / 3;
-
+    margin-top: 11px;
 
 }
 
@@ -308,9 +385,7 @@ table {
     margin-left: 5px;
 }
 
-.card > .project-description {
-    margin-bottom: 80px;
-}
+
 
 .project-title, .announcements-title, .trending-title {
     background-color: #e2e8f0;
@@ -324,27 +399,37 @@ table {
     height: 200px;
     border-left: 7px #f0b429 solid;
     padding: 10px;
+    display: grid;
 }
 
+.title {
+    margin-top: 0.5rem;
+}
+
+.project-description {
+    text-wrap: balance;
+}
 
 .card > .title, .announcement-title {
     font-size: 20px;
 }
 
-.announcement-title {
-    margin-bottom: 8px;
 
-}
 
-.announcement-2 > .announcement-title, 
-.announcement-3 > .announcement-title {
-    margin-top: 8px;
+.announcements-trending {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 280px;
 }
 
 .announcements, .trending {
+    
+  
     padding: 10px;
     background-color: #e2e8f0;
     width: 240px;
+   
 
 }
 
@@ -355,11 +440,63 @@ table {
     height: 100%;
 }
 
-.card > .title {
+/* border radius issue with announcements div */
+
+
+.announcement-title {
+    font-size: 18px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+.announcement-message {
+    font-size: 14px;
+}
+
+.announcement {
+    padding: 4px;
+}
+
+.announcement-message, .project-description, .trending-project {
+    color: #747474;
+}
+
+.trending-container, .trending-profile {
+    display: grid;
+}
+
+.trending-container {
+    height: 288px;
+}
+
+.trending-profile {
+    grid-template-columns: 1fr 2fr;
+  
+ 
 
 }
 
+.trending-profile-picture {
+    width: 52.5px;
+    margin-left: 5px;
+    margin-top: 5px;
+ 
+}
 
+
+.trending-text {
+    display: grid;
+    height: 2rem;
+    margin-top: 1rem;
+    
+    
+  
+}
+
+.trending-handle {
+    justify-items: center;
+    align-self: center;
+    margin-bottom: 5px;
+}
 
 
 
